@@ -1,4 +1,4 @@
-package org.dl.eg.service;
+package org.dl.eg.bean;
 
 import java.io.Serializable;
 

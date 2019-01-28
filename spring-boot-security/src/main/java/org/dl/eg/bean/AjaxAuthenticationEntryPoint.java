@@ -1,6 +1,7 @@
-package org.dl.eg.service;
+package org.dl.eg.bean;
 
 import com.alibaba.fastjson.JSON;
+import org.dl.eg.bean.AjaxResponseBody;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ public class AjaxAuthenticationEntryPoint  implements AuthenticationEntryPoint {
 
         responseBody.setStatus("000");
         responseBody.setMsg("Need Authorities!");
-
+        System.out.println("----commence");
         httpServletResponse.getWriter().write(JSON.toJSONString(responseBody));
     }
 
