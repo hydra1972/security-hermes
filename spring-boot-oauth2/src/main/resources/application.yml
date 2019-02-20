@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-boot-oauth2
+server:
+  port: 8002
