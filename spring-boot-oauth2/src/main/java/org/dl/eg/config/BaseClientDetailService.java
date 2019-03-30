@@ -7,6 +7,7 @@ import org.springframework.security.oauth2.provider.ClientRegistrationException;
 /**
  * Created by yituiyun on 2019/3/3.
  */
+
 public class BaseClientDetailService implements ClientDetailsService {
 
     @Override

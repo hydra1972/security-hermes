@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)  //  启用方法级别的权限认证
+@EnableGlobalMethodSecurity(prePostEnabled = true)  //
 public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
 
     @Bean
@@ -30,8 +30,8 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
-//                .formLogin().and()
-                .httpBasic().and()
+                .formLogin().and()
+//                .httpBasic().and()
                 .csrf().disable();
     }
 }

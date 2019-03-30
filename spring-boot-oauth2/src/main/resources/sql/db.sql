@@ -104,3 +104,7 @@ CREATE TABLE IF NOT EXISTS `oauth2`.`oauth_refresh_token` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
 -- -------------------
+
+INSERT INTO `oauth2`.`oauth_client_details`(`client_id`, `resource_ids`, `client_secret`, `scope`, `authorized_grant_types`, `web_server_redirect_uri`, `authorities`, `access_token_validity`, `refresh_token_validity`, `additional_information`, `autoapprove`) VALUES ('client', NULL, 'secret', 'app', 'authorization_code', 'http://www.baidu.com', NULL, NULL, NULL, NULL, NULL);
+
+#/oauth/authorize?client_id=client&response_type=code&redirect_uri=http://www.baidu.com  url可以使用。
